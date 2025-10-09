@@ -7,6 +7,7 @@ import Loader from '../Components/Loader';
 const AllApps = () => {
     const { apps, loader } = useApps();
     const [search, setSearch] = useState('');
+    const [loaded, setLoaded] = useState(false);
     const term = search.trim().toLocaleLowerCase()
 
     const searchedApps = term ? apps.filter(app => app.title.toLocaleLowerCase().includes(term)) : apps;
@@ -17,6 +18,15 @@ const AllApps = () => {
     //     searchedApps;
     // }
     // if (!search) return <Loader> </Loader>;
+    
+    const handleLoader = (e) => {
+        setLoaded(true)
+        setSearch(e.target.value);
+        setTimeout(() => {
+            setLoaded(false);
+        }, 500);
+    }
+
     if (loader) return <Loader></Loader>;
     if (searchedApps.length === 0) return <AppError></AppError>;
 
@@ -43,10 +53,10 @@ const AllApps = () => {
                         </g>
                     </svg>
 
-                    <input value={search} onChange={e => setSearch(e.target.value)} type="search" placeholder="Search" />
+                    <input value={search} onChange={handleLoader} type="search" placeholder="Search" />
                 </label>
             </div>
-            {loader ? <Loader></Loader> :
+            {loaded ? <Loader></Loader> :
                 <div className='mt-10 max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
                     {
                         searchedApps.map(app => <AppCard key={app.id} app={app}></AppCard>)
