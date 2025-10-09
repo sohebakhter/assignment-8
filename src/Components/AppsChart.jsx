@@ -24,7 +24,7 @@ const AppsChart = () => {
         .reverse();
 
     return (
-        <div className="w-full h-[400px] p-6 bg-white shadow-md rounded-xl">
+        <div className="w-full h-[200px] md:h-[400px] p-6 bg-white shadow-md rounded-xl">
             <h2 className="text-xl font-semibold mb-4">
                 Ratings
             </h2>

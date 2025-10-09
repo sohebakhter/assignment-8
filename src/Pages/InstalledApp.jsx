@@ -35,13 +35,13 @@ const InstalledApp = () => {
 
     return (
         <div>
-            <div className='mt-20 text-center'>
-                <h1 className='font-bold text-5xl'>Your Installed Apps</h1>
+            <div className='mt-5 md:mt-20 text-center'>
+                <h1 className='font-bold text-3xl md:text-5xl'>Your Installed Apps</h1>
                 <p className='mt-4 text-lg text-gray-500'>Explore All Trending Apps on the Market developed by us</p>
             </div>
 
             <div className='max-w-[1440px] mx-auto mt-10'>
-                <div className='flex justify-between'>
+                <div className='md:flex justify-between'>
                     <h1 className='font-semibold text-xl'>{sortedItem.length} Apps Found</h1>
                     {/* sort এখানে করা হয়েছে */}
                     <select className='select select-bordered' value={sortOrder} onChange={e => setSortOrder(e.target.value)} >
@@ -52,11 +52,11 @@ const InstalledApp = () => {
                 </div>
                 {
                     sortedItem.map(ins =>
-                        ins ? (<div key={ins.id} className='flex justify-between items-center border-1 border-gray-200 p-3 rounded-xl mt-4'>
+                        ins ? (<div key={ins.id} className='flex justify-between items-center border-1 border-gray-200 md:p-3 rounded-xl mt-4'>
                             <div className='flex items-center gap-4 '>
                                 <img className='w-[80px] rounded-xl' src={ins.image} alt="" />
                                 <div className='space-y-3'>
-                                    <h1 className='font-medium text-xl'>{ins.title}: {ins.companyName}</h1>
+                                    <h1 className='font-medium md:text-xl'>{ins.title}: {ins.companyName}</h1>
                                     <div className="card-actions ">
                                         <div className="badge text-[#00D390] bg-[#F1F5E8]">
                                             <GoDownload />{ins.downloads}

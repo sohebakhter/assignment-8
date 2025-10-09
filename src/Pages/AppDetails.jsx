@@ -49,8 +49,8 @@ const AppDetails = () => {
     if (!app) return <AppError></AppError>;
 
     return (
-        <div className="max-w-[1440px] mx-auto mt-10">
-            <div className="flex gap-10">
+        <div className="max-w-[1440px] mx-auto mt-5 md:mt-10">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
                 <img className="w-[350px]" src={image} alt={title} />
                 <div>
                     <h1 className="font-bold text-3xl">{title}</h1>

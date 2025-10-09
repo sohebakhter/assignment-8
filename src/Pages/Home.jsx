@@ -37,22 +37,22 @@ const Home = () => {
                 <img src={hero} alt="" />
             </div>
 
-            <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white text-center p-20'>
+            <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white text-center p-3 md:p-20'>
                 <h1 className='font-bold text-4xl'>Trusted by Millions, Built for You</h1>
-                <div className='max-w-[1440px] mx-auto flex justify-evenly items-center mt-10'>
-                    <div className='space-y-4'>
+                <div className='max-w-[1440px] mx-auto flex justify-evenly items-center mt-3 md:mt-10'>
+                    <div className='md:space-y-4'>
                         <p>Total Downloads</p>
-                        <h1 className='font-bold text-5xl'>29.9M</h1>
+                        <h1 className='font-bold text-3xl md:text-5xl'>29.9M</h1>
                         <p>21% more than last month</p>
                     </div>
-                    <div className='space-y-4'>
+                    <div className='md:space-y-4'>
                         <p>Total Reviews</p>
-                        <h1 className='font-bold text-5xl'>906K</h1>
+                        <h1 className='font-bold text-3xl md:text-5xl'>906K</h1>
                         <p>46% more than last month</p>
                     </div>
-                    <div className='space-y-4'>
+                    <div className='md:space-y-4'>
                         <p>Active Apps</p>
-                        <h1 className='font-bold text-5xl'>132+</h1>
+                        <h1 className='font-bold text-3xl md:text-5xl'>132+</h1>
                         <p>31 more will Launch</p>
                     </div>
                 </div>

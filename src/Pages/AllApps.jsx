@@ -22,14 +22,13 @@ const AllApps = () => {
 
     return (
         <div>
-            <div className='mt-20 text-center'>
-                <h1 className='font-bold text-5xl'>Our All Applications</h1>
+            <div className='mt-5 md:mt-20 text-center'>
+                <h1 className='font-bold text-3xl md:text-5xl'>Our All Applications</h1>
                 <p className='mt-4 text-lg text-gray-500'>Explore All Apps on the Market developed by us. We code for Millions</p>
             </div>
-            <div className='max-w-[1440px] mx-auto mt-10 flex justify-between items-center'>
+
+            <div className='max-w-[1440px] mx-auto mt-10 md:flex justify-between items-center'>
                 <h1 className='font-semibold text-2xl'>({searchedApps.length})Apps Found</h1>
-
-
                 <label className="input">
                     <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <g
