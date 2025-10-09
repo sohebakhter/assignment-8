@@ -12,13 +12,7 @@ const AllApps = () => {
 
     const searchedApps = term ? apps.filter(app => app.title.toLocaleLowerCase().includes(term)) : apps;
 
-    // if (searchedApps.length === 0) {
-    //     return <AppError></AppError>
-    // } else{ 
-    //     searchedApps;
-    // }
-    // if (!search) return <Loader> </Loader>;
-    
+
     const handleLoader = (e) => {
         setLoaded(true)
         setSearch(e.target.value);

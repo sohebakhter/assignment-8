@@ -4,7 +4,6 @@ import logo from '../assets/logo.png'
 const Loader = () => {
     return (
         <div className='flex justify-center items-center mt-10'>
-            {/* <progress className="progress w-56"></progress> */}
             <div className='flex'>
                 <span className='font-bold text-6xl'>L</span>
                 <img className='w-20 h-20 animate-[spin_1s_linear_infinite]' src={logo} alt="" />

@@ -11,7 +11,6 @@ const Home = () => {
     const { apps, loader } = useApps();
     const slicedApps = apps.slice(0, 8);
     //-----------------------------------------
-
     return (
         <div>
             <div>
