@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { GoDownload } from 'react-icons/go';
 import { FaStar } from 'react-icons/fa';
 import { toast, ToastContainer } from 'react-toastify';
+import useApps from '../Hooks/useApps';
+import Loader from '../Components/Loader';
 
 
 const InstalledApp = () => {
+    const { loader } = useApps();
     //এটাই local add হলে সেই local data এখানে দেখানো হবে। (get from local storage)
     const [installed, setInstalled] = useState([]);
     const [sortOrder, setSortOrder] = useState('none')
@@ -51,7 +54,7 @@ const InstalledApp = () => {
                     </select>
                 </div>
                 {
-                    sortedItem.map(ins =>
+                    loader ? <Loader></Loader> : sortedItem.map(ins =>
                         ins ? (<div key={ins.id} className='flex justify-between items-center border-1 border-gray-200 md:p-3 rounded-xl mt-4'>
                             <div className='flex items-center gap-4 '>
                                 <img className='w-[80px] rounded-xl' src={ins.image} alt="" />
