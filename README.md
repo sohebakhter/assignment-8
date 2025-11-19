@@ -11,7 +11,7 @@ HeroApps is a lightweight app-browsing platform built with a fully functional se
 ---
 ## 📸 Screenshot
 
-<img width="530" height="931" alt="Image" src="https://github.com/user-attachments/assets/da45ce6c-d990-471a-8e4c-3c2cc82d716c" />
+![Image](https://github.com/user-attachments/assets/5423550a-a7d2-43c6-9b15-8fc5ddd9a2b3)
 
 ---
 ## 🛠️ Tech Stack
