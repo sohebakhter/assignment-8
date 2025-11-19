@@ -61,7 +61,7 @@ Backend
 
 ## 🧑‍💻 How to Run Locally
 ### 🔹 1. Clone the Repository
-git clone https://github.com/sohebakhter/assignment-8.git
+git clone https://github.com/sohebakhter/hero-io.git
 
 cd heroapps
 
@@ -91,9 +91,9 @@ npm start
 ---
 ## 🔗 Live Links
 
-Live Site: https://8-assignment.netlify.app
+Live Site: https://store-hero-io.netlify.app
 
-GitHub Repo: https://github.com/sohebakhter/assignment-8.git
+GitHub Repo: https://github.com/sohebakhter/hero-io.git
 
 ---
 # 📱 App Showcase
