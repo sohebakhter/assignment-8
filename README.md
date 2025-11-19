@@ -1,3 +1,101 @@
+# 🚀 HeroApps (hero.io)
+
+A modern, fast, and responsive platform for discovering and browsing apps with a clean UI and seamless user experience.
+
+---
+
+## 🖼️ Project Overview
+
+HeroApps is a lightweight app-browsing platform built with a fully functional search system, category-based filtering, and API-powered dynamic data loading. The UI is optimized for performance, responsiveness, and user-friendly navigation.
+
+---
+## 📸 Screenshot
+
+<img width="530" height="931" alt="Image" src="https://github.com/user-attachments/assets/da45ce6c-d990-471a-8e4c-3c2cc82d716c" />
+
+---
+## 🛠️ Tech Stack
+
+Frontend: React.js, Tailwind CSS
+
+Backend: Node.js, Express.js
+
+Database: MongoDB
+
+API: REST API
+
+Others: Axios / Fetch, dotenv
+
+---
+## ⭐ Main Features
+
+🔍 Real-time Search
+
+📂 Category-Based App Browsing
+
+📱 Fully Responsive UI
+
+⚡ Fast API Integration
+
+🗄️ MongoDB Data Storage
+
+🌐 Live App Listing
+
+---
+## 📦 Dependencies
+
+Frontend
+"react",  
+"react-router-dom",  
+"axios",  
+"tailwindcss",  
+"daisyui"
+
+Backend
+"express",  
+"mongodb",  
+"dotenv",  
+"cors",  
+
+---
+
+## 🧑‍💻 How to Run Locally
+### 🔹 1. Clone the Repository
+git clone https://github.com/sohebakhter/assignment-8.git
+
+cd heroapps
+
+### 🔹 2. Install Dependencies
+Frontend
+cd client
+npm install
+
+Backend
+cd server
+npm install
+
+### 🔹 3. Configure Environment Variables
+
+Create a .env file inside server:
+
+PORT=5000
+MONGO_URI=your-mongo-uri
+
+### 🔹 4. Start the Project
+Start Backend
+npm run dev
+
+Start Frontend
+npm start
+
+---
+## 🔗 Live Links
+
+Live Site: https://8-assignment.netlify.app
+
+GitHub Repo: https://github.com/sohebakhter/assignment-8.git
+
+---
 # 📱 App Showcase
 
 A curated list of 20 modern mobile and web apps with unique purposes, detailed descriptions, and technologies behind each.  
@@ -145,11 +243,3 @@ SafePass is a secure password manager that encrypts and stores your credentials 
 
 ---
 
-### 🛠️ General Tech Stack Summary
-- **Frontend:** React, Next.js, Tailwind CSS, React Native  
-- **Backend:** Node.js, Express, Firebase, MongoDB  
-- **Other Integrations:** REST APIs, Chart.js, Map APIs, AI APIs (OpenAI), Stripe, Cloudinary  
-
----
-
-© 2025 | Built for educational and creative portfolio use.
